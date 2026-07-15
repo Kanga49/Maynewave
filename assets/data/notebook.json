@@ -1,0 +1,44 @@
+{
+  "entries": [
+    {
+      "label": "Morning fog",
+      "text": "The first ferry often appears before the shoreline is fully visible.",
+      "category": "morning"
+    },
+    {
+      "label": "Active Pass",
+      "text": "The waterway changes character with every tide and every wind.",
+      "category": "waterfront"
+    },
+    {
+      "label": "Historic Miners Bay",
+      "text": "The neighbourhood makes more sense on foot than through a windshield.",
+      "category": "history"
+    },
+    {
+      "label": "Government Dock",
+      "text": "Just before sunset, the dock becomes a place to linger rather than arrive.",
+      "category": "sunset"
+    },
+    {
+      "label": "Autumn crocus",
+      "text": "Small flowers appear among old oyster shells when summer has clearly ended.",
+      "category": "nature"
+    },
+    {
+      "label": "After rain",
+      "text": "The forest road grows darker, quieter and more reflective after a storm.",
+      "category": "nature"
+    },
+    {
+      "label": "Village morning",
+      "text": "Coffee, groceries and conversation all happen within a few minutes of one another.",
+      "category": "food"
+    },
+    {
+      "label": "Evening water",
+      "text": "The last light often stays on Active Pass after the village has gone quiet.",
+      "category": "sunset"
+    }
+  ]
+}

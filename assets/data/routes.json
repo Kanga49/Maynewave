@@ -1,0 +1,84 @@
+{
+  "routes": [
+    {
+      "id": "morning-on-foot",
+      "name": "Morning on Foot",
+      "audiences": [
+        "booking",
+        "guest"
+      ],
+      "color": "#5f7562",
+      "time": "Measure",
+      "distance": "",
+      "photo": "images/morning-fog-ferry.jpg",
+      "description": "A gentle loop from MayneWave through Historic Miners Bay, the waterfront and village.",
+      "stops": [
+        "maynewave",
+        "active-pass",
+        "miners-bay-dock",
+        "miners-bay-village",
+        "maynewave"
+      ],
+      "story": [
+        "Leave MayneWave after sunrise.",
+        "Pause at Active Pass for the first ferries.",
+        "Continue to the dock and village.",
+        "Return at an unhurried pace."
+      ],
+      "best_time": "Early morning"
+    },
+    {
+      "id": "historic-miners-bay",
+      "name": "Historic Miners Bay",
+      "audiences": [
+        "booking",
+        "guest"
+      ],
+      "color": "#b78951",
+      "time": "Measure",
+      "distance": "",
+      "photo": "images/island-life-parade.jpg",
+      "description": "A short neighbourhood route linking the cabin, village, museum and waterfront.",
+      "stops": [
+        "maynewave",
+        "miners-bay-village",
+        "museum-gaol",
+        "miners-bay-dock",
+        "maynewave"
+      ],
+      "story": [
+        "Begin at the cabin.",
+        "Walk into the village.",
+        "Visit the museum and historic waterfront.",
+        "Finish at the dock."
+      ],
+      "best_time": "Late morning"
+    },
+    {
+      "id": "sunset-waterfront",
+      "name": "Sunset Waterfront",
+      "audiences": [
+        "booking",
+        "guest"
+      ],
+      "color": "#4d7b88",
+      "time": "Measure",
+      "distance": "",
+      "photo": "images/sunset-dock.jpg",
+      "description": "An evening walk toward Active Pass and the government dock for the last light.",
+      "stops": [
+        "maynewave",
+        "active-pass",
+        "miners-bay-dock",
+        "maynewave"
+      ],
+      "story": [
+        "Leave before sunset.",
+        "Follow the waterfront toward Active Pass.",
+        "Pause at the dock for the last light.",
+        "Walk home as the bay quiets."
+      ],
+      "best_time": "Evening"
+    }
+  ]
+}

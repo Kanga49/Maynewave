@@ -1,0 +1,28 @@
+{
+  "notes": [
+    {
+      "id": "fn-01",
+      "label": "Field Note #01",
+      "text": "The first ferry often appears silently through the morning fog.",
+      "photo": "images/morning-fog-ferry.jpg"
+    },
+    {
+      "id": "fn-02",
+      "label": "Field Note #02",
+      "text": "Autumn crocus appears among old oyster shells near the beach.",
+      "photo": "images/autumn-crocus.jpg"
+    },
+    {
+      "id": "fn-03",
+      "label": "Field Note #03",
+      "text": "The dock grows quiet just before the last light leaves Active Pass.",
+      "photo": "images/sunset-dock.jpg"
+    },
+    {
+      "id": "fn-04",
+      "label": "Field Note #04",
+      "text": "Historic Miners Bay works best at walking speed.",
+      "photo": "images/forest-road.jpg"
+    }
+  ]
+}
