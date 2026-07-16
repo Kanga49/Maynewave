@@ -115,29 +115,30 @@
  .seasonal-hero-note{position:static;text-align:left;padding:0 21px 26px}
 }
 
-/* Release 0.3 — Cabin Experience */
-.cabin-hero{min-height:88svh}
-.cabin-intro{display:grid;grid-template-columns:.72fr 1.28fr;gap:8vw;align-items:start}
-.cabin-intro h2{font-size:clamp(3rem,7vw,6rem)}
-.cabin-intro .lead{margin-top:0}
-.cabin-story{display:grid;grid-template-columns:1.1fr .9fr;background:#ebe7dc}
-.cabin-story-photo{min-height:620px;background:center/cover no-repeat}
-.cabin-story-copy{padding:clamp(44px,7vw,92px);display:flex;flex-direction:column;justify-content:center}
-.cabin-story-copy h2{font-size:clamp(3rem,6vw,5.7rem)}
-.cabin-story-copy p{margin-top:20px;color:var(--ink-soft);font-size:1.08rem}
-.cabin-note{margin-top:20px;padding:16px 18px;border-left:4px solid var(--gold);background:#f6f2e9;color:var(--ink-soft)}
-.cabin-qualities{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px}
-.cabin-quality{padding:26px;border-top:1px solid var(--line)}
-.cabin-quality h3{font-size:2rem}
-.cabin-quality p{margin-top:10px;color:var(--ink-soft)}
-.cabin-photo-request{background:var(--ink);color:white}
-.cabin-photo-request .lead{color:rgba(255,255,255,.72)}
-.cabin-photo-list{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:36px}
-.cabin-photo-list span{padding:18px 12px;border-top:1px solid rgba(255,255,255,.28);font-family:var(--serif);font-size:1.2rem}
-.cabin-setting-caption{position:absolute;left:clamp(22px,5vw,72px);right:clamp(22px,5vw,72px);bottom:22px;z-index:3;color:rgba(255,255,255,.72);font-size:.82rem;max-width:720px}
+
+/* Release 0.4 — Cabin Experience */
+.cabin-hero{background-position:center 56%}
+.cabin-intro{background:#fffdf8}
+.cabin-intro-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:8vw;align-items:start}
+.cabin-intro-copy{padding-top:10px}
+.cabin-intro-copy p{font-size:1.12rem;color:#566970}
+.cabin-intro-copy p+p{margin-top:22px}
+.cabin-feature-band{padding:0 0 clamp(90px,11vw,150px);background:#fffdf8}
+.cabin-feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.cabin-feature-grid article{border-top:1px solid var(--line);padding-top:22px}
+.cabin-feature-grid span{display:block;font-size:.72rem;letter-spacing:.14em;color:var(--gold);font-weight:760}
+.cabin-feature-grid h3{font-size:2.15rem;margin-top:12px}
+.cabin-feature-grid p{margin-top:10px;color:#617078}
+.cabin-setting-grid{display:grid;grid-template-columns:1.2fr .8fr;background:#e7e5dc}
+.cabin-setting-image img{height:100%;min-height:650px;object-fit:cover}
+.cabin-setting-copy{padding:clamp(42px,6vw,84px);display:flex;flex-direction:column;justify-content:center}
+.cabin-setting-copy h2{font-size:clamp(2.8rem,5vw,5.1rem)}
+.cabin-setting-copy p{margin-top:22px;color:#56666c;font-size:1.06rem}
+.cabin-setting-copy .button{align-self:flex-start;margin-top:28px}
+.cabin-details{padding-top:0}
+.cabin-cta{margin-top:0}
 @media(max-width:940px){
- .cabin-intro,.cabin-story{grid-template-columns:1fr}
- .cabin-story-photo{min-height:470px}
- .cabin-qualities{grid-template-columns:1fr}
- .cabin-photo-list{grid-template-columns:1fr 1fr}
+  .cabin-intro-grid,.cabin-setting-grid,.cabin-feature-grid{grid-template-columns:1fr}
+  .cabin-feature-grid{gap:22px}
+  .cabin-setting-image img{min-height:420px}
 }
