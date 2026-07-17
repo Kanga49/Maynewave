@@ -199,6 +199,47 @@ footer {
   padding-bottom:4px;
 }
 
+
+.stay-intro{
+  max-width:720px;
+  margin:0 0 44px;
+  color:var(--muted);
+  font:normal 1.15rem/1.7 Arial,sans-serif;
+}
+.stay-list{
+  border-top:1px solid var(--line);
+}
+.stay-feature{
+  display:grid;
+  grid-template-columns:72px 1fr;
+  gap:18px;
+  padding:28px 0;
+  border-bottom:1px solid var(--line);
+}
+.stay-feature>span{
+  color:var(--muted);
+  font-size:.82rem;
+  letter-spacing:.12em;
+}
+.stay-feature h3{
+  margin:0 0 8px;
+  font:normal 1.7rem Georgia,serif;
+}
+.stay-feature p{
+  margin:0;
+  max-width:760px;
+  color:var(--muted);
+}
+.stay-cta{
+  margin-top:34px;
+}
+.stay-cta a{
+  color:var(--ink);
+  text-decoration:none;
+  border-bottom:1px solid var(--ink);
+  padding-bottom:4px;
+}
+
 @media (max-width:820px) {
   nav .links { display:none; }
   .grid { grid-template-columns:1fr 1fr; }
@@ -295,12 +336,46 @@ footer {
 
 <div class="stay" id="stay">
   <div class="stay-inner">
-    <h2>Stay</h2>
-    <div class="stay-grid">
-      <div class="stay-card">The Cabin</div>
-      <div class="stay-card">The Deck</div>
-      <div class="stay-card">The Beach</div>
-      <div class="stay-card">Comfort</div>
+    <div class="section-kicker">Stay at MayneWave</div>
+    <h2>A quiet place above Active Pass.</h2>
+    <p class="stay-intro">A private cabin, a wide deck, beach access and the comforts needed to settle in and slow down.</p>
+
+    <div class="stay-list">
+      <article class="stay-feature">
+        <span>01</span>
+        <div>
+          <h3>The Cabin</h3>
+          <p>A simple, comfortable retreat designed around the view and the rhythm of island life.</p>
+        </div>
+      </article>
+
+      <article class="stay-feature">
+        <span>02</span>
+        <div>
+          <h3>The Deck</h3>
+          <p>Morning espresso, ferry traffic, changing light and an uninterrupted view across Active Pass.</p>
+        </div>
+      </article>
+
+      <article class="stay-feature">
+        <span>03</span>
+        <div>
+          <h3>The Beach</h3>
+          <p>Step down to the shoreline for a paddle, a swim, a walk or simply a closer look at the tide.</p>
+        </div>
+      </article>
+
+      <article class="stay-feature">
+        <span>04</span>
+        <div>
+          <h3>Comfort</h3>
+          <p>A welcoming place to return to after exploring Mayne—or after doing very little at all.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="stay-cta">
+      <a href="#availability">Check availability →</a>
     </div>
   </div>
 </div>
@@ -315,6 +390,6 @@ footer {
   <p>Availability and booking details will appear here.</p>
 </section>
 
-<footer>MayneWave · Prototype V7.2</footer>
+<footer>MayneWave · Prototype V7.3</footer>
 </body>
 </html>
