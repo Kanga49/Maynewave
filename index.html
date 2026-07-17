@@ -1,30 +1,236 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MayneWave</title><link rel="stylesheet" href="assets/css/site.css"></head><body><header class="site-header"><div class="shell"><a class="brand brand-lockup" href="index.html"><img class="brand-mark" src="assets/images/maynewave-mark.svg" alt="">MayneWave</a><nav class="nav"><a href="cabin.html">The Cabin</a><a href="miners-bay.html">Historic Miners Bay</a><a href="atlas.html">Atlas</a><a href="explore.html">Beyond MayneWave</a><a href="seasonal.html">Seasonal</a><a class="pill" href="guest-guide.html">Guest Guide</a></nav></div></header><main><section class="hero hero-cinematic" style="background-image:url('assets/images/hero-fog-ferry.jpg')"><div class="shell"><div class="eyebrow">Historic Miners Bay · Active Pass</div><h1>Stay where the waterfront, village and beach meet.</h1><div class="hero-row"><p>A private cabin in one of Mayne Island’s most distinctive and walkable neighbourhoods.</p><a class="button" href="#minersbay">Explore the neighbourhood</a></div><div class="seasonal-hero-note">Historic Miners Bay on Active Pass — where the island slows down.</div></div></section><section class="section reveal" id="minersbay"><div class="shell"><div class="eyebrow">One connected place</div><h2>Historic Miners Bay on Active Pass.</h2><p class="lead">Ferries, the government dock, the beach, historic buildings and village services all belong to the same waterfront neighbourhood.</p><div class="grid4"><div class="card"><h3>Active Pass</h3><p>Ferries, fog and marine life nearby.</p></div><div class="card"><h3>The Beach</h3><p>Shoreline within an easy walk.</p></div><div class="card"><h3>Walkability</h3><p>Village services without the car.</p></div><div class="card"><h3>Private Cabin</h3><p>Your own quiet base in the neighbourhood.</p></div></div></div></section>
-<section class="section reveal"><div class="shell">
-<div class="eyebrow">Suggested walks</div><h2>Leave the car behind.</h2>
-<p class="lead">Three simple routes begin at MayneWave and connect the waterfront, village and Historic Miners Bay.</p>
-<div class="grid4">
-<div class="card"><h3>Morning on Foot</h3><p>Waterfront, dock and village.</p></div>
-<div class="card"><h3>Historic Miners Bay</h3><p>Museum, village and dock.</p></div>
-<div class="card"><h3>Sunset Waterfront</h3><p>Active Pass and the last light.</p></div>
-<div class="card"><h3>Open the Atlas</h3><p><a href="atlas.html">Explore the routes →</a></p></div>
-</div></div></section>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MayneWave — Life sounds different here</title>
+<style>
+:root {
+  --ink:#263238;
+  --muted:#66757b;
+  --mist:#f2f4f2;
+  --sea:#dce7e9;
+  --paper:#fbfaf6;
+  --line:#d9dfdc;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0;
+  color:var(--ink);
+  background:var(--paper);
+  font-family:Arial, Helvetica, sans-serif;
+  line-height:1.55;
+}
+nav {
+  position:sticky;
+  top:0;
+  z-index:20;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 5vw;
+  background:rgba(251,250,246,.94);
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(10px);
+}
+.brand {
+  font-family:Georgia, serif;
+  font-size:1.35rem;
+  letter-spacing:.02em;
+}
+nav a {
+  color:var(--ink);
+  text-decoration:none;
+  margin-left:22px;
+  font-size:.92rem;
+}
+.hero {
+  min-height:76vh;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  padding:8vh 7vw;
+  background:linear-gradient(180deg, var(--sea), var(--paper));
+}
+.hero h1 {
+  margin:0;
+  font:normal clamp(3.8rem, 10vw, 8rem)/.95 Georgia, serif;
+}
+.hero p {
+  margin:20px 0 0;
+  font:italic clamp(1.25rem, 3vw, 2rem) Georgia, serif;
+}
+.proximity {
+  max-width:980px;
+  margin:auto;
+  padding:80px 7vw;
+  text-align:center;
+  font:normal clamp(1.7rem,4vw,3.4rem)/1.25 Georgia,serif;
+}
+.eyrie {
+  position:relative;
+  min-height:78vh;
+  background:url('from-the-eyrie.jpeg') center 54%/cover no-repeat;
+}
+.eyrie::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.48));
+}
+.eyrie-copy {
+  position:absolute;
+  z-index:2;
+  left:7vw;
+  right:7vw;
+  bottom:7vh;
+  max-width:720px;
+  color:white;
+}
+.eyrie-copy h2 {
+  margin:0 0 14px;
+  font:normal clamp(2.2rem,5vw,4.5rem) Georgia,serif;
+}
+.eyrie-copy p {
+  margin:0;
+  font:italic clamp(1.1rem,2.5vw,1.7rem)/1.45 Georgia,serif;
+}
+.eyrie-copy .sig {
+  margin-top:16px;
+  font:normal 1rem Arial,sans-serif;
+}
+section {
+  max-width:1120px;
+  margin:auto;
+  padding:84px 7vw;
+}
+section h2 {
+  margin:0 0 34px;
+  font:normal clamp(2.2rem,5vw,4rem) Georgia,serif;
+}
+.grid {
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:16px;
+}
+.card {
+  min-height:190px;
+  padding:24px;
+  background:white;
+  border:1px solid var(--line);
+}
+.card h3 {
+  margin:0 0 10px;
+  font:normal 1.45rem Georgia,serif;
+}
+.card p { margin:0; color:var(--muted); }
+.stay {
+  background:var(--mist);
+  max-width:none;
+}
+.stay-inner {
+  max-width:1120px;
+  margin:auto;
+  padding:84px 7vw;
+}
+.stay-grid {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+.stay-card {
+  padding:32px 24px;
+  background:var(--paper);
+  border:1px solid var(--line);
+  font:normal 1.35rem Georgia,serif;
+}
+.gallery-intro {
+  max-width:680px;
+  font:italic 1.3rem/1.6 Georgia,serif;
+}
+footer {
+  padding:48px 7vw;
+  text-align:center;
+  color:var(--muted);
+  border-top:1px solid var(--line);
+}
+@media (max-width:820px) {
+  nav .links { display:none; }
+  .grid { grid-template-columns:1fr 1fr; }
+  .stay-grid { grid-template-columns:1fr 1fr; }
+}
+@media (max-width:520px) {
+  .grid,.stay-grid { grid-template-columns:1fr; }
+  .eyrie { min-height:70vh; }
+}
+</style>
+</head>
+<body>
 
-<section class="section five-minutes reveal">
-<div class="shell">
-<div class="eyebrow">Five minutes from here</div>
-<h2>Small distances. Big advantages.</h2>
-<div class="experience-grid">
-<div class="experience"><h3>Active Pass</h3><p>Stand beside one of the coast’s great marine passages.</p></div>
-<div class="experience"><h3>Historic Miners Bay</h3><p>Walk to the dock, village and waterfront history.</p></div>
-<div class="experience"><h3>The Beach</h3><p>Reach the shoreline before your coffee cools.</p></div>
+<nav>
+  <div class="brand">MayneWave</div>
+  <div class="links">
+    <a href="#stay">Stay</a>
+    <a href="#discover">Discover</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#availability">Availability</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div>
+    <h1>MayneWave</h1>
+    <p>Life sounds different here.</p>
+  </div>
+</header>
+
+<div class="proximity">
+  Close enough to Vancouver and Victoria for an easy getaway.<br>
+  <strong>Far enough away to leave the city pace behind.</strong>
 </div>
-</div>
+
+<section class="eyrie" aria-label="View from the Eyrie">
+  <div class="eyrie-copy">
+    <h2>From the Eyrie</h2>
+    <p>The first ferry has passed. The float plane has come and gone. Another day begins over Active Pass.</p>
+    <div class="sig">— John</div>
+  </div>
 </section>
-<section class="fullbleed reveal" style="background-image:url('assets/images/ferry-canoe.jpg')"><div class="fullcopy"><div class="eyebrow">Active Pass</div><h2>Not a day trip. Part of the stay.</h2><p>The waterway, ferries and tides are woven into everyday life here.</p></div></section><section class="section reveal"><div class="shell twocol"><div class="photo" style="background-image:url('assets/images/cabin-placeholder.svg')"></div><div class="copy"><div class="eyebrow">Where guests stay</div><h2>Your private island cabin.</h2><p>Comfortable, independent and close to everything that makes this location difficult to match.</p><a class="button dark" style="margin-top:28px" href="cabin.html">See the cabin</a></div></div></section><section class="section reveal"><div class="shell"><div class="eyebrow">From morning to evening</div><h2>A day at MayneWave.</h2><div class="gallery3" style="margin-top:38px"><div class="tile" style="background-image:url('assets/images/morning-fog-ferry.jpg')"><div><h3>Morning</h3><p>Fog and first ferries.</p></div></div><div class="tile" style="background-image:url('assets/images/canoe-family.jpg')"><div><h3>Afternoon</h3><p>Water at your own pace.</p></div></div><div class="tile" style="background-image:url('assets/images/sunset-dock.jpg')"><div><h3>Evening</h3><p>Last light at the dock.</p></div></div></div></div></section><section class="fullbleed" style="background-image:url('assets/images/sunset-dock.jpg')"><div class="fullcopy"><h2>Reserve your stay.</h2><p>Come for the cabin. Choose MayneWave for the location.</p><a class="button" href="#">Check availability</a></div></section>
-<section class="field-note-strip">
-<div class="shell">
-<p id="rotating-field-note">The first ferry often appears silently through the morning fog.</p>
-<small id="rotating-field-label">Field Note #01</small>
-</div>
+
+<section id="discover">
+  <h2>Discover</h2>
+  <div class="grid">
+    <article class="card"><h3>Listen</h3><p>Birdsong, ferry horns and waves.</p></article>
+    <article class="card"><h3>Watch</h3><p>Otters, eagles, seals and passing boats.</p></article>
+    <article class="card"><h3>Explore</h3><p>Trails, beaches, paddling and cycling.</p></article>
+    <article class="card"><h3>Taste</h3><p>Cafés, farm stands and island flavours.</p></article>
+    <article class="card"><h3>Seasons</h3><p>A different Mayne in every season.</p></article>
+  </div>
 </section>
-</main><footer><div class="shell"><div>© <span data-year></span> MayneWave · Mayne Island, British Columbia</div><div>Your front row to Historic Miners Bay and Active Pass.</div></div></footer><script src="assets/js/site.js"></script><script>const fieldNotes=[{"id": "fn-01", "label": "Field Note #01", "text": "The first ferry often appears silently through the morning fog.", "photo": "images/morning-fog-ferry.jpg"}, {"id": "fn-02", "label": "Field Note #02", "text": "Autumn crocus appears among old oyster shells near the beach.", "photo": "images/autumn-crocus.jpg"}, {"id": "fn-03", "label": "Field Note #03", "text": "The dock grows quiet just before the last light leaves Active Pass.", "photo": "images/sunset-dock.jpg"}, {"id": "fn-04", "label": "Field Note #04", "text": "Historic Miners Bay works best at walking speed.", "photo": "images/forest-road.jpg"}];let fn=0;setInterval(()=>{fn=(fn+1)%fieldNotes.length;document.getElementById("rotating-field-note").textContent=fieldNotes[fn].text;document.getElementById("rotating-field-label").textContent=fieldNotes[fn].label;},6500);</script></body></html>
+
+<div class="stay" id="stay">
+  <div class="stay-inner">
+    <h2>Stay</h2>
+    <div class="stay-grid">
+      <div class="stay-card">The Cabin</div>
+      <div class="stay-card">The Deck</div>
+      <div class="stay-card">The Beach</div>
+      <div class="stay-card">Comfort</div>
+    </div>
+  </div>
+</div>
+
+<section id="gallery">
+  <h2>Through My Lens</h2>
+  <p class="gallery-intro">Every photograph was taken while living at MayneWave. Not staged—simply moments that made me stop and look.</p>
+</section>
+
+<section id="availability">
+  <h2>Plan Your Stay</h2>
+  <p>Availability and booking details will appear here.</p>
+</section>
+
+<footer>MayneWave · Prototype V7.1</footer>
+</body>
+</html>
