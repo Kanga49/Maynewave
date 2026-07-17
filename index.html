@@ -155,6 +155,50 @@ footer {
   color:var(--muted);
   border-top:1px solid var(--line);
 }
+
+.section-kicker{
+  margin-bottom:12px;
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.78rem;
+}
+.discover-list{
+  margin-top:48px;
+  border-top:1px solid var(--line);
+}
+.discover-row{
+  display:grid;
+  grid-template-columns:72px 1fr;
+  gap:18px;
+  padding:28px 0;
+  border-bottom:1px solid var(--line);
+}
+.discover-number{
+  color:var(--muted);
+  font-size:.82rem;
+  letter-spacing:.12em;
+}
+.discover-row h3{
+  margin:0 0 8px;
+  font:normal 1.7rem Georgia,serif;
+}
+.discover-row p{
+  margin:0;
+  max-width:760px;
+  color:var(--muted);
+  font-size:1.03rem;
+}
+.discover-cta{
+  margin-top:34px;
+}
+.discover-cta a{
+  color:var(--ink);
+  text-decoration:none;
+  border-bottom:1px solid var(--ink);
+  padding-bottom:4px;
+}
+
 @media (max-width:820px) {
   nav .links { display:none; }
   .grid { grid-template-columns:1fr 1fr; }
@@ -199,13 +243,53 @@ footer {
 </section>
 
 <section id="discover">
-  <h2>Discover</h2>
-  <div class="grid">
-    <article class="card"><h3>Listen</h3><p>Birdsong, ferry horns and waves.</p></article>
-    <article class="card"><h3>Watch</h3><p>Otters, eagles, seals and passing boats.</p></article>
-    <article class="card"><h3>Explore</h3><p>Trails, beaches, paddling and cycling.</p></article>
-    <article class="card"><h3>Taste</h3><p>Cafés, farm stands and island flavours.</p></article>
-    <article class="card"><h3>Seasons</h3><p>A different Mayne in every season.</p></article>
+  <div class="section-kicker">Discover Mayne Island</div>
+  <h2>Some places ask you to look.<br>Mayne invites you to notice.</h2>
+
+  <div class="discover-list">
+    <article class="discover-row">
+      <div class="discover-number">01</div>
+      <div>
+        <h3>Listen</h3>
+        <p>Birdsong before breakfast. Ferry horns carrying across Active Pass. Waves reaching the shore after the ship has gone.</p>
+      </div>
+    </article>
+
+    <article class="discover-row">
+      <div class="discover-number">02</div>
+      <div>
+        <h3>Watch</h3>
+        <p>Eagles overhead, seals in the pass, otters along the shore and the changing light across the islands.</p>
+      </div>
+    </article>
+
+    <article class="discover-row">
+      <div class="discover-number">03</div>
+      <div>
+        <h3>Explore</h3>
+        <p>Paddle, cycle, walk the trails, visit the beaches—or simply follow whatever catches your attention.</p>
+      </div>
+    </article>
+
+    <article class="discover-row">
+      <div class="discover-number">04</div>
+      <div>
+        <h3>Taste</h3>
+        <p>Island cafés, farm stands, local produce and unhurried meals after a day outside.</p>
+      </div>
+    </article>
+
+    <article class="discover-row">
+      <div class="discover-number">05</div>
+      <div>
+        <h3>Seasons</h3>
+        <p>Spring blossoms, summer paddling, autumn colour and winter storms. Mayne is never quite the same island twice.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="discover-cta">
+    <a href="#gallery">See Mayne through my lens →</a>
   </div>
 </section>
 
@@ -231,6 +315,6 @@ footer {
   <p>Availability and booking details will appear here.</p>
 </section>
 
-<footer>MayneWave · Prototype V7.1</footer>
+<footer>MayneWave · Prototype V7.2</footer>
 </body>
 </html>
